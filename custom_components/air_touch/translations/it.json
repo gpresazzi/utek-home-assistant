@@ -1,0 +1,34 @@
+{
+  "title": "Air Touch VMC",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Collega la VMC",
+        "description": "Inserisci indirizzo e parametri Modbus TCP della VMC. Verranno eseguite solo letture.",
+        "data": {
+          "host": "IP o hostname",
+          "port": "Porta TCP",
+          "unit_id": "Modbus Unit ID"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossibile leggere i registri. Verifica IP, porta, Unit ID e connessione della VMC."
+    },
+    "abort": {
+      "already_configured": "Questa VMC è già configurata."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opzioni VMC",
+        "description": "Abilita i comandi sperimentali di ventilazione, stagione e bypass. I profili Sole (30) e Aperitivo (65) sono stati osservati su un singolo impianto.",
+        "data": {
+          "poll_interval": "Intervallo di lettura (secondi)",
+          "enable_writes": "Abilita scritture sperimentali"
+        }
+      }
+    }
+  }
+}

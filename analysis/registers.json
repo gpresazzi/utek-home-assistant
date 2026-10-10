@@ -1,0 +1,2943 @@
+{
+  "ranges": [
+    {
+      "start": 1,
+      "length": 5,
+      "group": "configuration"
+    },
+    {
+      "start": 14,
+      "length": 1,
+      "group": "configuration"
+    },
+    {
+      "start": 20,
+      "length": 1,
+      "group": "configuration"
+    },
+    {
+      "start": 24,
+      "length": 4,
+      "group": "configuration"
+    },
+    {
+      "start": 51,
+      "length": 6,
+      "group": "commands"
+    },
+    {
+      "start": 81,
+      "length": 20,
+      "group": "unit_1_data"
+    },
+    {
+      "start": 1001,
+      "length": 3,
+      "group": "weekly_programming"
+    },
+    {
+      "start": 1017,
+      "length": 56,
+      "group": "weekly_programming"
+    },
+    {
+      "start": 8502,
+      "length": 2,
+      "group": "service_data"
+    },
+    {
+      "start": 8555,
+      "length": 3,
+      "group": "service_data"
+    },
+    {
+      "start": 8559,
+      "length": 1,
+      "group": "service_data"
+    }
+  ],
+  "registers": [
+    {
+      "id": 1,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "SW_PN_0",
+      "group": "configuration",
+      "isMultiple": false,
+      "dataFormat": "SW TYPE 0"
+    },
+    {
+      "id": 2,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "SW_PN_1",
+      "group": "configuration",
+      "isMultiple": false,
+      "dataFormat": "SW TYPE 1"
+    },
+    {
+      "id": 3,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "SW_PN_2",
+      "group": "configuration",
+      "isMultiple": false,
+      "dataFormat": "SW VER 0 (AAMM)"
+    },
+    {
+      "id": 4,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "SW_PN_3",
+      "group": "configuration",
+      "isMultiple": false,
+      "dataFormat": "SW VER 1 (DDPP)"
+    },
+    {
+      "id": 5,
+      "isWritable": true,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "REMOTE_CONTROL",
+      "group": "configuration",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 1,
+          "name": "R/W DEVICE_RESET",
+          "isWritable": true,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 1,
+          "length": 1,
+          "name": "R TERMINAL_ACTIVE",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 2,
+          "length": 1,
+          "name": "R TERM_RS485_ACTIVE",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_4": {
+          "startingBit": 4,
+          "length": 1,
+          "name": "R/W CONNECTION_LOST",
+          "isWritable": true,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_5": {
+          "startingBit": 13,
+          "length": 1,
+          "name": "R/W CMD DEVICE RESET",
+          "isWritable": true,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_6": {
+          "startingBit": 14,
+          "length": 1,
+          "name": "R/W WR_APP_CONF",
+          "isWritable": true,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_7": {
+          "startingBit": 15,
+          "length": 1,
+          "name": "R/W WR_SP",
+          "isWritable": true,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 14,
+      "isWritable": true,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "SPEED_BALANCE",
+      "group": "configuration",
+      "isMultiple": false,
+      "dataFormat": "67-150 (%)"
+    },
+    {
+      "id": 20,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "PARAMETER_FLAGS",
+      "group": "configuration",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 2,
+          "name": "R/W SEASON",
+          "isWritable": true,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 2,
+          "length": 2,
+          "name": "R/W BYPASS",
+          "isWritable": true,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 4,
+          "length": 1,
+          "name": "DEHUMIDIFIER SWITCH OFF",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_4": {
+          "startingBit": 5,
+          "length": 1,
+          "name": "SPEED SWITCH OFF",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_5": {
+          "startingBit": 6,
+          "length": 1,
+          "name": "POST TEMPERATURE MANAGING SWITCH OFF",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 24,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "UNIT_1_MAX_FILT_HOURS",
+      "group": "configuration",
+      "isMultiple": false,
+      "dataFormat": "0-199 (500h)"
+    },
+    {
+      "id": 25,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "UNIT_2_MAX_FILT_HOURS",
+      "group": "configuration",
+      "isMultiple": false,
+      "dataFormat": "0-199 (500h)"
+    },
+    {
+      "id": 26,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "UNIT_3_MAX_FILT_HOURS",
+      "group": "configuration",
+      "isMultiple": false,
+      "dataFormat": "0-199 (500h)"
+    },
+    {
+      "id": 27,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "UNIT_4_MAX_FILT_HOURS",
+      "group": "configuration",
+      "isMultiple": false,
+      "dataFormat": "0-199 (500h)"
+    },
+    {
+      "id": 51,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SPEED_SET_POINT",
+      "group": "commands",
+      "isMultiple": false,
+      "dataFormat": "[see register 51 on the manual]"
+    },
+    {
+      "id": 52,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TEMPERATURE_SET_POINT",
+      "group": "commands",
+      "isMultiple": false,
+      "dataFormat": "OFF(<=48) or 50-300 (0,1 °C)"
+    },
+    {
+      "id": 53,
+      "isWritable": true,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "TIMER",
+      "group": "commands",
+      "isMultiple": false,
+      "dataFormat": "0-14400 (sec.)"
+    },
+    {
+      "id": 54,
+      "isWritable": true,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "SPEEDS REMOTE CONTROL",
+      "group": "commands",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 7,
+          "name": "REMOTE_SUPPLY_SPEED",
+          "isWritable": true,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 7,
+          "length": 1,
+          "name": "SUPPLY_SPEED_REMOTE_CONTROL",
+          "isWritable": true,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 8,
+          "length": 7,
+          "name": "REMOTE_EXHAUST_SPEED",
+          "isWritable": true,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_4": {
+          "startingBit": 15,
+          "length": 1,
+          "name": "EXHAUST_SPEED_REMOTE_CONTROL",
+          "isWritable": true,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 55,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "RHUMIDITY_SET_POINT",
+      "group": "commands",
+      "isMultiple": false,
+      "dataFormat": "0-100 (%)"
+    },
+    {
+      "id": 56,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TEMPERATURE_FREE_SET_POINT",
+      "group": "commands",
+      "isMultiple": false,
+      "dataFormat": "50-400 (0,1 °C)"
+    },
+    {
+      "id": 81,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "TEMP_E",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(0,1 °C)"
+    },
+    {
+      "id": 82,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "TEMP_R",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(0,1 °C)"
+    },
+    {
+      "id": 83,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "TEMP_X",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(0,1 °C)"
+    },
+    {
+      "id": 84,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "TEMP_I",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(0,1 °C)"
+    },
+    {
+      "id": 85,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "TEMP_W",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(0,1 °C)"
+    },
+    {
+      "id": 86,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "STATUS_FLAGS",
+      "group": "unit_1_data",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 1,
+          "name": "BYPASS",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 1,
+          "length": 1,
+          "name": "SUPPLY_SPEED_REM_CONT_ACTIVE",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 2,
+          "length": 1,
+          "name": "EXHAUST_SPEED_REM_CONT_ACTIVE",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_4": {
+          "startingBit": 3,
+          "length": 1,
+          "name": "DEHUM_ON",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_5": {
+          "startingBit": 4,
+          "length": 1,
+          "name": "NOFROST_ACTIVE",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_6": {
+          "startingBit": 5,
+          "length": 1,
+          "name": "EXT_DI_HUMIDITY",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_7": {
+          "startingBit": 6,
+          "length": 1,
+          "name": "EXT_DI_PIR_MIN",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_8": {
+          "startingBit": 7,
+          "length": 1,
+          "name": "EXT_DI_REMOTE_OFF",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_9": {
+          "startingBit": 8,
+          "length": 1,
+          "name": "HEAT/COOL_1",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_10": {
+          "startingBit": 9,
+          "length": 1,
+          "name": "HEAT_2",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_11": {
+          "startingBit": 10,
+          "length": 1,
+          "name": "TEMP_WATER_LOW",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_12": {
+          "startingBit": 11,
+          "length": 1,
+          "name": "EXT_DI_SUMMER",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_13": {
+          "startingBit": 12,
+          "length": 1,
+          "name": "EXT_DI_FIRE",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_14": {
+          "startingBit": 13,
+          "length": 1,
+          "name": "EXT_DI_WATER_NOFROST",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_15": {
+          "startingBit": 14,
+          "length": 1,
+          "name": "EXT_DI_AUTO_COMPARE",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 87,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "SPEED_C_VALUE",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "[see register 87 on the manual]"
+    },
+    {
+      "id": 88,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "SPEED_D_VALUE",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "[see register 88 on the manual]"
+    },
+    {
+      "id": 89,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "AUTO_INPUT_VALUE",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(%)"
+    },
+    {
+      "id": 90,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "ALARMS 1",
+      "group": "unit_1_data",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 1,
+          "name": "COMM_X540_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 1,
+          "length": 1,
+          "name": "TE_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 2,
+          "length": 1,
+          "name": "TR_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_4": {
+          "startingBit": 3,
+          "length": 1,
+          "name": "TX_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_5": {
+          "startingBit": 4,
+          "length": 1,
+          "name": "FILTERS_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_6": {
+          "startingBit": 5,
+          "length": 1,
+          "name": "FANS_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_7": {
+          "startingBit": 6,
+          "length": 1,
+          "name": "AUTO1_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_8": {
+          "startingBit": 7,
+          "length": 1,
+          "name": "TI_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_9": {
+          "startingBit": 8,
+          "length": 1,
+          "name": "COMM_X531_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_10": {
+          "startingBit": 9,
+          "length": 1,
+          "name": "TW_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_11": {
+          "startingBit": 10,
+          "length": 1,
+          "name": "TW_LOW",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_12": {
+          "startingBit": 11,
+          "length": 1,
+          "name": "AUTO1_TO_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_13": {
+          "startingBit": 12,
+          "length": 1,
+          "name": "COMM_X570_DPS_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_14": {
+          "startingBit": 13,
+          "length": 1,
+          "name": "COMM_X570_DPE_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_15": {
+          "startingBit": 14,
+          "length": 1,
+          "name": "DPSUPPLY_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_16": {
+          "startingBit": 14,
+          "length": 1,
+          "name": "DPEXHAUST_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 91,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "DP_SUPPLY",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(Pa)"
+    },
+    {
+      "id": 92,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "DP_EXHAUST",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(Pa)"
+    },
+    {
+      "id": 93,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "FLOW_SUPPLY",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(m3/h)"
+    },
+    {
+      "id": 94,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "FLOW_EXHAUST",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(m3/h)"
+    },
+    {
+      "id": 95,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "FAN_HOURS_H",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(65536 h)"
+    },
+    {
+      "id": 96,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "FAN_HOURS_L",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(h)"
+    },
+    {
+      "id": 97,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "ALARMS 2",
+      "group": "unit_1_data",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 1,
+          "name": "CONFIGURATION_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 1,
+          "length": 1,
+          "name": "ANTI_ICE_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 2,
+          "length": 1,
+          "name": "EXT_AI2_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_4": {
+          "startingBit": 3,
+          "length": 1,
+          "name": "TD_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_5": {
+          "startingBit": 4,
+          "length": 1,
+          "name": "COMM_X570_EDPS_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_6": {
+          "startingBit": 5,
+          "length": 1,
+          "name": "COMM_X570_EDPE_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_7": {
+          "startingBit": 6,
+          "length": 1,
+          "name": "EDPS_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_8": {
+          "startingBit": 7,
+          "length": 1,
+          "name": "EDPE_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_9": {
+          "startingBit": 8,
+          "length": 1,
+          "name": "AUTO2_TO_FAIL",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        },
+        "val_10": {
+          "startingBit": 9,
+          "length": 1,
+          "name": "MIN_SPEED",
+          "isWritable": false,
+          "isProtected": false,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 98,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "PRE_HEAT",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(%)"
+    },
+    {
+      "id": 99,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "POST_HEAT",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(%)"
+    },
+    {
+      "id": 100,
+      "isWritable": false,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "TEMP_D",
+      "group": "unit_1_data",
+      "isMultiple": false,
+      "dataFormat": "(0,1 °C)"
+    },
+    {
+      "id": 1001,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TIME_TABLE_SPEED_0",
+      "group": "weekly_programming",
+      "isMultiple": false,
+      "dataFormat": "[see register 1001 on the manual]"
+    },
+    {
+      "id": 1002,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TIME_TABLE_SPEED_1",
+      "group": "weekly_programming",
+      "isMultiple": false,
+      "dataFormat": "[see register 1002 on the manual]"
+    },
+    {
+      "id": 1003,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TIME_TABLE_SPEED_2",
+      "group": "weekly_programming",
+      "isMultiple": false,
+      "dataFormat": "[see register 1003 on the manual]"
+    },
+    {
+      "id": 1017,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "MONDAY-CHANGE-0",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1018,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "MONDAY-CHANGE-1",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1019,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "MONDAY-CHANGE-2",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1020,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "MONDAY-CHANGE-3",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1021,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "MONDAY-CHANGE-4",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1022,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "MONDAY-CHANGE-5",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1023,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "MONDAY-CHANGE-6",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1024,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "MONDAY-CHANGE-7",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1025,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TUESDAY-CHANGE-0",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1026,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TUESDAY-CHANGE-1",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1027,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TUESDAY-CHANGE-2",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1028,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TUESDAY-CHANGE-3",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1029,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TUESDAY-CHANGE-4",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1030,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TUESDAY-CHANGE-5",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1031,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TUESDAY-CHANGE-6",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1032,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "TUESDAY-CHANGE-7",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1033,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "WEDNESDAY-CHANGE-0",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1034,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "WEDNESDAY-CHANGE-1",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1035,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "WEDNESDAY-CHANGE-2",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1036,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "WEDNESDAY-CHANGE-3",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1037,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "WEDNESDAY-CHANGE-4",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1038,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "WEDNESDAY-CHANGE-5",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1039,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "WEDNESDAY-CHANGE-6",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1040,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "WEDNESDAY-CHANGE-7",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1041,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "THURSDAY-CHANGE-0",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1042,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "THURSDAY-CHANGE-1",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1043,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "THURSDAY-CHANGE-2",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1044,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "THURSDAY-CHANGE-3",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1045,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "THURSDAY-CHANGE-4",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1046,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "THURSDAY-CHANGE-5",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1047,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "THURSDAY-CHANGE-6",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1048,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "THURSDAY-CHANGE-7",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1049,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "FRIDAY-CHANGE-0",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1050,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "FRIDAY-CHANGE-1",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1051,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "FRIDAY-CHANGE-2",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1052,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "FRIDAY-CHANGE-3",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1053,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "FRIDAY-CHANGE-4",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1054,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "FRIDAY-CHANGE-5",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1055,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "FRIDAY-CHANGE-6",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1056,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "FRIDAY-CHANGE-7",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1057,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SATURDAY-CHANGE-0",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1058,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SATURDAY-CHANGE-1",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1059,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SATURDAY-CHANGE-2",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1060,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SATURDAY-CHANGE-3",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1061,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SATURDAY-CHANGE-4",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1062,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SATURDAY-CHANGE-5",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1063,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SATURDAY-CHANGE-6",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1064,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SATURDAY-CHANGE-7",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1065,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SUNDAY-CHANGE-0",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1066,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SUNDAY-CHANGE-1",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1067,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SUNDAY-CHANGE-2",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1068,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SUNDAY-CHANGE-3",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1069,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SUNDAY-CHANGE-4",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1070,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SUNDAY-CHANGE-5",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1071,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SUNDAY-CHANGE-6",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 1072,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": false,
+      "name": "SUNDAY-CHANGE-7",
+      "group": "weekly_programming",
+      "isMultiple": true,
+      "dataFormat": {
+        "val_1": {
+          "startingBit": 0,
+          "length": 11,
+          "name": "TIME - MINUTES",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_2": {
+          "startingBit": 11,
+          "length": 3,
+          "name": "SPEED SELECTION",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        },
+        "val_3": {
+          "startingBit": 14,
+          "length": 2,
+          "name": "TEMPERATURE REG. ENABLE",
+          "isWritable": true,
+          "isProtected": true,
+          "isPasswordNeeded": false
+        }
+      }
+    },
+    {
+      "id": 8502,
+      "isWritable": true,
+      "isProtected": false,
+      "isPasswordNeeded": true,
+      "name": "BAUD RATE",
+      "group": "service_data",
+      "isMultiple": false,
+      "dataFormat": "(100 bit/s)"
+    },
+    {
+      "id": 8503,
+      "isWritable": true,
+      "isProtected": false,
+      "isPasswordNeeded": true,
+      "name": "TIMEOUT",
+      "group": "service_data",
+      "isMultiple": false,
+      "dataFormat": "(sec.)"
+    },
+    {
+      "id": 8555,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": true,
+      "name": "DAY",
+      "group": "service_data",
+      "isMultiple": false,
+      "dataFormat": "1(LUNEDÌ)-7(DOMENICA)"
+    },
+    {
+      "id": 8556,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": true,
+      "name": "HOUR",
+      "group": "service_data",
+      "isMultiple": false,
+      "dataFormat": "1-24"
+    },
+    {
+      "id": 8557,
+      "isWritable": true,
+      "isProtected": true,
+      "isPasswordNeeded": true,
+      "name": "MINUTES",
+      "group": "service_data",
+      "isMultiple": false,
+      "dataFormat": "0-59"
+    },
+    {
+      "id": 8559,
+      "isWritable": true,
+      "isProtected": false,
+      "isPasswordNeeded": false,
+      "name": "PASSWORD",
+      "group": "service_data",
+      "isMultiple": false,
+      "dataFormat": ""
+    }
+  ]
+}

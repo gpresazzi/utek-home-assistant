@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+# Proprietary APK contents and downloaded reverse-engineering tools stay local.
+*.apk
+analysis/*
+!analysis/PROTOCOLLO.md
+!analysis/registers.json
+!analysis/read-vmc.cjs
